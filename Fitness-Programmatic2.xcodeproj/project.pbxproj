@@ -9,21 +9,19 @@
 /* Begin PBXBuildFile section */
 		5C2A26F029919CA700A0DE34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2A26EF29919CA700A0DE34 /* AppDelegate.swift */; };
 		5C2A26F229919CA700A0DE34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2A26F129919CA700A0DE34 /* SceneDelegate.swift */; };
-		5C2A26F429919CA700A0DE34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2A26F329919CA700A0DE34 /* ViewController.swift */; };
-		5C2A26F729919CA700A0DE34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C2A26F529919CA700A0DE34 /* Main.storyboard */; };
 		5C2A26F929919CA800A0DE34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2A26F829919CA800A0DE34 /* Assets.xcassets */; };
 		5C2A26FC29919CA800A0DE34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C2A26FA29919CA800A0DE34 /* LaunchScreen.storyboard */; };
+		5C2A270429919EF900A0DE34 /* CardSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2A270329919EF900A0DE34 /* CardSelectionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5C2A26EC29919CA700A0DE34 /* Fitness-Programmatic2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitness-Programmatic2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C2A26EF29919CA700A0DE34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C2A26F129919CA700A0DE34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5C2A26F329919CA700A0DE34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5C2A26F629919CA700A0DE34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C2A26F829919CA800A0DE34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C2A26FB29919CA800A0DE34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C2A26FD29919CA800A0DE34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C2A270329919EF900A0DE34 /* CardSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +56,7 @@
 			children = (
 				5C2A26EF29919CA700A0DE34 /* AppDelegate.swift */,
 				5C2A26F129919CA700A0DE34 /* SceneDelegate.swift */,
-				5C2A26F329919CA700A0DE34 /* ViewController.swift */,
-				5C2A26F529919CA700A0DE34 /* Main.storyboard */,
+				5C2A270329919EF900A0DE34 /* CardSelectionVC.swift */,
 				5C2A26F829919CA800A0DE34 /* Assets.xcassets */,
 				5C2A26FA29919CA800A0DE34 /* LaunchScreen.storyboard */,
 				5C2A26FD29919CA800A0DE34 /* Info.plist */,
@@ -127,7 +124,6 @@
 			files = (
 				5C2A26FC29919CA800A0DE34 /* LaunchScreen.storyboard in Resources */,
 				5C2A26F929919CA800A0DE34 /* Assets.xcassets in Resources */,
-				5C2A26F729919CA700A0DE34 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +134,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C2A26F429919CA700A0DE34 /* ViewController.swift in Sources */,
 				5C2A26F029919CA700A0DE34 /* AppDelegate.swift in Sources */,
 				5C2A26F229919CA700A0DE34 /* SceneDelegate.swift in Sources */,
+				5C2A270429919EF900A0DE34 /* CardSelectionVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5C2A26F529919CA700A0DE34 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5C2A26F629919CA700A0DE34 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5C2A26FA29919CA800A0DE34 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +280,6 @@
 				INFOPLIST_FILE = "Fitness-Programmatic2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +307,6 @@
 				INFOPLIST_FILE = "Fitness-Programmatic2/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
