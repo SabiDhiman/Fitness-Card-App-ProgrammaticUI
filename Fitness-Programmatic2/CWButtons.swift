@@ -11,7 +11,7 @@ class CWButtons: UIButton {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        configure()
+       
     }
     
     required init?(coder: NSCoder) {
@@ -19,19 +19,27 @@ class CWButtons: UIButton {
     }
     //create custom init for buttons
     
-    init(backgroundColor: UIColor, title: String){
+    init(color: UIColor, title: String, systemImageName:String){
         super.init(frame: .zero)
-        self.backgroundColor = backgroundColor
-        setTitle(title, for: .normal)
-        configure()
+        
+        configuration = .tinted()
+        configuration?.baseBackgroundColor = color
+        configuration?.baseForegroundColor = color
+        configuration?.cornerStyle = .medium
+        configuration?.title = title
+        
+        //adding icons
+        
+        configuration?.image = UIImage(systemName: systemImageName)
+        configuration?.imagePadding = 5
+        configuration?.imagePlacement = .leading
+     
+        translatesAutoresizingMaskIntoConstraints = false
+        
+     
     }
     
-    //start with configure function
-    func configure(){
-        layer.cornerRadius = 8
-        titleLabel?.font = .systemFont(ofSize: 19, weight: .bold)
-        setTitleColor(.white, for: .normal)
-        translatesAutoresizingMaskIntoConstraints = false // use autolayout
-    }
+  
+   
 
 }
